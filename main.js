@@ -56,7 +56,7 @@ function checkDraw() {
 
 function resetGame(){
     currentPlayer='X'
-    document.querySelector('.message').textContent = `Player ${currentPlayer}'s turn`;
+    document.querySelector('.message').textContent = "Player 1's turn (X)";
     gameEnded=false
     cells.forEach(cell => cell.textContent='')
     cells.forEach(cell => cell.addEventListener('click', handleCellClick));
